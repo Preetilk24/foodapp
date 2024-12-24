@@ -15,7 +15,7 @@ const Footer = () => {
             <p>At Quick Bites, customer satisfaction is at the heart of everything we do. We are passionate about creating a memorable dining experience. We aim to offer a friendly atmosphere where great food and great service come together seamlessly.</p>
             <div className="footer-social-icons">
             <img src={facebookIcon} alt="Facebook" />
-<img src={linkedinIcon} alt="LinkedIn" />
+<a href="https://www.linkedin.com/in/preetilk"><img src={linkedinIcon} alt="LinkedIn" /></a>
 <img src={twitterIcon} alt="Twitter" />
 
             </div>
