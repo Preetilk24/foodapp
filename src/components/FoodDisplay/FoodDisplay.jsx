@@ -1,46 +1,24 @@
-import React, { useContext } from 'react';
-import { StoreContext } from '../../Context/StoreContext';
-import FoodItem from '../FoodItem/FoodItem';
-import './FoodDisplay.css';
-import foodData from './foodData'; // Import food data
+import React, { useContext } from 'react'
+import { StoreContext } from '../../Context/StoreContext'
+import FoodItem from '../FoodItem/FoodItem'
+import './FoodDisplay.css'
 
-const FoodDisplay = ({ category }) => {
-  const { food_list } = useContext(StoreContext);
+const FoodDisplay = ({category}) => {
+
+  const {food_list} = useContext(StoreContext);
 
   return (
-    <div className="food-display" id="food-display">
-      <h2>Top Dishes For You</h2>
-      <div className="food-display-list">
-        {food_list.length > 0 ? food_list.map((item) => {
-          if (category === "All" || category === item.category) {
-            return (
-              <FoodItem
-                key={item._id}
-                image={item.image} // Pass the image from food_list here
-                name={item.name}
-                desc={item.description}
-                price={item.price}
-                id={item._id}
-              />
-            );
-          }
-        }) : foodData.map((item) => {  // Fallback to the imported food data if no food_list
-          if (category === "All" || category === item.category) {
-            return (
-              <FoodItem
-                key={item._id}
-                image={item.image}
-                name={item.name}
-                desc={item.description}
-                price={item.price}
-                id={item._id}
-              />
-            );
+    <div className='food-display' id='food-display'>
+      <h2>Top dishes near you</h2>
+      <div className='food-display-list'>
+        {food_list.map((item)=>{
+          if (category==="All" || category===item.food_category) {
+            return <FoodItem key={item.food_id} image={item.food_image} name={item.food_name} desc={item.food_desc} price={item.food_price} id={item.food_id}/>
           }
         })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FoodDisplay;
+export default FoodDisplay

@@ -67,7 +67,7 @@
     margin-bottom: 16px;
   }
   .footer-content-center h2:hover {
-    color: tomato;
+    color: #c704f8e8;
     transform: scale(1.1);
     cursor: pointer;
   }
@@ -89,7 +89,7 @@
   }
   
   .footer-content-center a:hover {
-   color: tomato;
+   color:#c704f8e8;
 
     /* Darker  on hover */
   }
@@ -109,7 +109,7 @@
   }
   
   .footer-content-right h2:hover {
-    color: tomato;
+    color:#c704f8e8;
     transform: scale(1.1);
   }
   .footer-content-right ul {
@@ -122,7 +122,7 @@
     margin: 8px 0;
   }
   .footer-content-right li:hover {
-    color: tomato;
+    color: #c704f8e8;
  
      /* Darker  on hover */
    }

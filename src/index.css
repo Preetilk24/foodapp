@@ -6,17 +6,11 @@
   --bg-500:#494444;
   --text-900:#3e3954;
   --text-700:#411b1b;
-  --border:tomato;
+  --border:#c704f8e8;
   --button:#edd6f6c3;
   --background:#f4e0e0;
 }
-body.light{
-  --bg-black-900:#f6f6fd;
-  --bg-black-100:#f1ebec43;
-  --bg-black-50:#dad2dd;
-  --text-black-900:#302e4d;
-  --text-black-700:#504e70;
-}
+
 * {
   margin: 0;
   padding: 0;
