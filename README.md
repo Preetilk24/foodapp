@@ -19,4 +19,6 @@ A responsive and interactive **Food Ordering App** built using **React.js**, **H
 | CSS3       | Styling and layout           |
 | JavaScript | Logic and interactivity      |
 
+## Live link
+https://online-foodapp.onrender.com/
 
